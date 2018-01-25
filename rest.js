@@ -1,7 +1,13 @@
 module.exports = function average(...num) {
 	let total = 0;
-	for (let i=0; i<num.length; i++){
-		total += num[i];
-	}
-	return total/num.length;
+	let len = num.length;
+	total = num.reduce((prev, curr)=>{
+		if (curr === undefined){
+			len--;
+			return prev+0;
+		}
+		return prev+curr;
+	},0);
+
+	return total/len;
 };

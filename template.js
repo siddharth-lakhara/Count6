@@ -1,7 +1,9 @@
-//function template() {
-let str = `Hello, ${process.argv[2]}!
-Your name lowercased is "${process.argv[2].toLowerCase()}".`
-console.log(str);
-//}
+function template(name) {
+	let str = `Hello, ${name}!
+Your name lowercased is "${name.toLowerCase()}".`;
 
-//module.exports = template;
+	//console.log(str);
+	return str;
+}
+
+module.exports = template;

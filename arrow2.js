@@ -1,6 +1,6 @@
 let foot = {
 	kick: function () {
-		this.yelp = "Ouch!";
+		this.yelp = 'Ouch!';
 		setImmediate(() => {
 			console.log(this.yelp);
 		});

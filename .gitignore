@@ -1,2 +1,7 @@
 node_modules
 try.js
+coverage
+package.json
+package-lock.json
+.eslintrc0.js
+.eslintrc1.js
